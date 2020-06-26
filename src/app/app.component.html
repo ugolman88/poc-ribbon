@@ -6,7 +6,8 @@
       </a>
       <!--<mat-icon (click)="onDeleteTab(tablink)">close</mat-icon>-->
     </ng-template>
+<ng-template injecterhost></ng-template>
   </mat-tab>
 </mat-tab-group>
 
-  <router-outlet></router-outlet>
+  <router-outlet *ngIf="intab===false"></router-outlet>

@@ -1,3 +1,4 @@
+import { InjecterDirective } from './injecter.directive';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -20,6 +21,7 @@ import { MatInputModule } from '@angular/material/input';
     HomeComponent,
     FattureComponent,
     FornitureComponent,
+    InjecterDirective,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +32,7 @@ import { MatInputModule } from '@angular/material/input';
     MatSelectModule,
     MatInputModule,
   ],
+  entryComponents: [HomeComponent, FattureComponent, FornitureComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
