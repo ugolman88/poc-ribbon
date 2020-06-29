@@ -6,7 +6,6 @@ import { Routes, RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/first', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'fatture', component: FattureComponent },
   { path: 'forniture', component: FornitureComponent },

@@ -11,7 +11,11 @@ import { FattureComponent } from './fatture/fatture.component';
 import { FornitureComponent } from './forniture/forniture.component';
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
-
+import { MenuComponent } from './menu/menu.component';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { TabContentComponent } from './tab-content/tab-content.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -22,6 +26,8 @@ import { MatInputModule } from '@angular/material/input';
     FattureComponent,
     FornitureComponent,
     InjecterDirective,
+    MenuComponent,
+    TabContentComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +37,9 @@ import { MatInputModule } from '@angular/material/input';
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,
+    MatListModule,
+    MatSidenavModule,
+    MatIconModule,
   ],
   entryComponents: [HomeComponent, FattureComponent, FornitureComponent],
   providers: [],

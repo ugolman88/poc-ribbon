@@ -1,13 +1,22 @@
-<mat-tab-group style="width: 95%;" [selectedIndex]="selectedTabIndex" (selectedIndexChange)="onTabChange($event)">
-  <mat-tab *ngFor="let link of navLinks" routerLink="{{link.link}}">
-    <ng-template mat-tab-label>
-      <a>
-        {{link.label}}
-      </a>
-      <!--<mat-icon (click)="onDeleteTab(tablink)">close</mat-icon>-->
-    </ng-template>
-<ng-template injecterhost></ng-template>
-  </mat-tab>
-</mat-tab-group>
+<mat-drawer-container class="container">
+  <mat-drawer mode="side" opened>
+    <app-menu></app-menu>
+  </mat-drawer>
+  <mat-drawer-content>
+    <mat-tab-group style="width: 95%;" [selectedIndex]="selectedTabIndex">
+      <mat-tab *ngFor="let link of navLinks" routerLink="{{link.link}}">
+        <ng-template mat-tab-label>
+          <a>
+            {{link.label}}
+          </a>
+          <mat-icon (click)="onDeleteTab(link)">close</mat-icon>
+        </ng-template>
+        <div>
+          <app-tab-content [tab]="link"></app-tab-content>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
 
-  <router-outlet *ngIf="intab===false"></router-outlet>
+    <router-outlet *ngIf="intab===false"></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>
