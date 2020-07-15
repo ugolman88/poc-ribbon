@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Poc-Reloadtab": {
+    "Poc-ribbon": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Poc-Reloadtab",
+            "outputPath": "dist/Poc-ribbon",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Poc-Reloadtab:build"
+            "browserTarget": "Poc-ribbon:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Poc-Reloadtab:build:production"
+              "browserTarget": "Poc-ribbon:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Poc-Reloadtab:build"
+            "browserTarget": "Poc-ribbon:build"
           }
         },
         "test": {
@@ -116,16 +116,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Poc-Reloadtab:serve"
+            "devServerTarget": "Poc-ribbon:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Poc-Reloadtab:serve:production"
+              "devServerTarget": "Poc-ribbon:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Poc-Reloadtab"
+  "defaultProject": "Poc-ribbon"
 }
