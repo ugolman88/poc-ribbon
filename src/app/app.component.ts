@@ -19,11 +19,10 @@ import { InjecterDirective } from './injecter.directive';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit, AfterViewInit {
-
-  selectedTabIndex: number = 0;
+export class AppComponent implements OnInit {
+  selectedTabIndex = 0;
   navLinks: any[];
-  intab: boolean = true;
+  intab = true;
 
   constructor(
     private router: Router,
@@ -33,12 +32,14 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.navLinks = this.tabservice.getTabs();
     this.tabservice.tabsChange$.subscribe((d) => {
       this.navLinks = this.tabservice.getTabs();
-      //this.loadComponent();
     });
+    this.selectedTabIndex = 0;
   }
   ngOnInit(): void {}
   onDeleteTab(tab) {
     this.tabservice.removeTab(tab);
   }
-  ngAfterViewInit() {}
+  onTabChanged(event) {
+    this.tabservice.changeTab(this.tabservice.tabs[event]);
+  }
 }

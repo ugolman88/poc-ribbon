@@ -89,24 +89,33 @@
             ]
           }
         ]
-      },
+      }
+    ]
+  },
+  {
+    "context": "Forniture",
+    "tabs": [
       {
-        "tabname": "secondTab",
+        "tabname": "commonTab",
         "groups": [
           {
             "groupName": "Principals",
             "items": [
               {
-                "icon": "create",
-                "name": "modify"
+                "icon": "content_copy",
+                "name": "copy"
               },
               {
-                "icon": "add",
-                "name": "add"
+                "icon": "content_cut",
+                "name": "cut"
               },
               {
-                "icon": "clear",
-                "name": "delete"
+                "icon": "content_paste",
+                "name": "paste"
+              },
+              {
+                "icon": "content_paste",
+                "name": "paste"
               }
             ]
           }

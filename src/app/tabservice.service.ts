@@ -1,3 +1,4 @@
+
 import { Injectable } from '@angular/core';
 import { TabItem } from 'src/tabitem';
 import { Subject } from 'rxjs';
@@ -6,7 +7,7 @@ import { Subject } from 'rxjs';
   providedIn: 'root',
 })
 export class TabService {
-  private tabsChange = new Subject<TabItem[]>();
+  private tabsChange = new Subject<TabItem>();
   tabsChange$ = this.tabsChange.asObservable();
   tabs: TabItem[] = [] as TabItem[];
   selectedTab: TabItem;
@@ -18,7 +19,11 @@ export class TabService {
       this.tabs.push(tabItem);
     }
     this.selectedTab = tabItem;
-    this.tabsChange.next(this.tabs);
+    this.tabsChange.next(tabItem);
+  }
+
+  changeTab(tabItem: TabItem): void {
+     this.tabsChange.next(tabItem);
   }
 
   getTabs(): TabItem[] {
@@ -38,6 +43,6 @@ export class TabService {
       this.tabs = [];
       this.selectedTab = this.tabs[0];
     }
-    this.tabsChange.next(this.tabs);
+    this.tabsChange.next(tabItem);
   }
 }
