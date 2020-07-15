@@ -16,6 +16,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { TabContentComponent } from './tab-content/tab-content.component';
 import { MatIconModule } from '@angular/material/icon';
+import { RibbonComponent } from './ribbon/ribbon.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -28,12 +31,15 @@ import { MatIconModule } from '@angular/material/icon';
     InjecterDirective,
     MenuComponent,
     TabContentComponent,
+    RibbonComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    HttpClientModule ,
     MatTabsModule,
+    FlexLayoutModule,
     MatFormFieldModule,
     MatSelectModule,
     MatInputModule,

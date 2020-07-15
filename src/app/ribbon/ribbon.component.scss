@@ -1,0 +1,19 @@
+.group{
+  min-width: 160px;
+  border-right: solid 1px grey;
+  margin: 5px;
+label{
+  width: 100%;
+
+}}
+.item_ribbon{
+   width: 60px;
+}
+::ng-deep .mat-tab-label{
+  height: 30px !important;
+  min-width: 0!important;
+ padding: 10px!important;
+ margin: 3px!important;
+ font-size: x-small;
+  }
+

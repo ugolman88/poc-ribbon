@@ -1,0 +1,117 @@
+[
+  {
+    "context": "Home",
+    "tabs": [
+      {
+        "tabname": "commonTab",
+        "groups": [
+          {
+            "groupName": "Principals",
+            "items": [
+              {
+                "icon": "content_copy",
+                "name": "copy"
+              },
+              {
+                "icon": "content_cut",
+                "name": "cut"
+              },
+              {
+                "icon": "content_paste",
+                "name": "paste"
+              }
+            ]
+          },
+          {
+            "groupName": "Crud",
+            "items": [
+              {
+                "icon": "create",
+                "name": "modify"
+              },
+              {
+                "icon": "add",
+                "name": "add"
+              },
+              {
+                "icon": "clear",
+                "name": "delete"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tabname": "secondTab",
+        "groups": [
+          {
+            "groupName": "Other",
+            "items": [
+              {
+                "icon": "bookmark",
+                "name": "bookmark"
+              },
+              {
+                "icon": "build",
+                "name": "settings"
+              },
+              {
+                "icon": "cached",
+                "name": "refresh"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "context": "Fatture",
+    "tabs": [
+      {
+        "tabname": "commonTab",
+        "groups": [
+          {
+            "groupName": "Principals",
+            "items": [
+              {
+                "icon": "content_copy",
+                "name": "copy"
+              },
+              {
+                "icon": "content_cut",
+                "name": "cut"
+              },
+              {
+                "icon": "content_paste",
+                "name": "paste"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tabname": "secondTab",
+        "groups": [
+          {
+            "groupName": "Principals",
+            "items": [
+              {
+                "icon": "create",
+                "name": "modify"
+              },
+              {
+                "icon": "add",
+                "name": "add"
+              },
+              {
+                "icon": "clear",
+                "name": "delete"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

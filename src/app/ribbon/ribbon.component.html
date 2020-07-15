@@ -1,0 +1,17 @@
+<mat-tab-group>
+  <mat-tab *ngFor="let tab of data.tabs" [label]="tab.tabname">
+    <div fxLayout="row">
+      <div fxLayout="column" *ngFor="let group of tab.groups" class="group">
+        <div fxLayout="row" fxLayoutAlign="center start">
+          <div fxLayout="column" fxLayoutAlign="center" class="item_ribbon" *ngFor="let group of group.items">
+            <button mat-icon-button fxFlexAlign="center" style="background: transparent;" (click)="onClick($event)">
+              <mat-icon style="color:white;">{{group.icon}}</mat-icon>
+            </button>
+            <span fxFlexAlign="center" style="font-size: x-small; color: darkgray; align-self: center;">{{group.name}}</span>
+          </div>
+        </div>
+        <span fxFlexAlign="center" style="font-size: small; color: darkgray; margin-top: 10px;"> {{group.groupName}}</span>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>

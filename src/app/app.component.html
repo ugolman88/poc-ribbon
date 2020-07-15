@@ -3,6 +3,7 @@
     <app-menu></app-menu>
   </mat-drawer>
   <mat-drawer-content>
+    <app-ribbon></app-ribbon>
     <mat-tab-group style="width: 95%;" [selectedIndex]="selectedTabIndex">
       <mat-tab *ngFor="let link of navLinks" routerLink="{{link.link}}">
         <ng-template mat-tab-label>
