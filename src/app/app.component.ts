@@ -1,19 +1,12 @@
 import { TabService } from './tabservice.service';
-import { FornitureComponent } from './forniture/forniture.component';
-import { FattureComponent } from './fatture/fatture.component';
-import { HomeComponent } from './home/home.component';
+
 import {
   Component,
   OnInit,
   ComponentFactoryResolver,
-  ViewChild,
-  ViewContainerRef,
-  AfterViewInit,
-  ViewChildren,
-  QueryList,
+
 } from '@angular/core';
 import { Router } from '@angular/router';
-import { InjecterDirective } from './injecter.directive';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -25,8 +18,6 @@ export class AppComponent implements OnInit {
   intab = true;
 
   constructor(
-    private router: Router,
-    private componentFactoryResolver: ComponentFactoryResolver,
     private tabservice: TabService
   ) {
     this.navLinks = this.tabservice.getTabs();

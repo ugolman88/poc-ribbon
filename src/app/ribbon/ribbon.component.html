@@ -3,11 +3,11 @@
     <div fxLayout="row">
       <div fxLayout="column" *ngFor="let group of tab.groups" class="group">
         <div fxLayout="row" fxLayoutAlign="center start">
-          <div fxLayout="column" fxLayoutAlign="center" class="item_ribbon" *ngFor="let group of group.items">
-            <button mat-icon-button fxFlexAlign="center" style="background: transparent;" (click)="onClick($event)">
-              <mat-icon style="color:white;">{{group.icon}}</mat-icon>
+          <div fxLayout="column" fxLayoutAlign="center" class="item_ribbon" *ngFor="let item of group.items">
+            <button mat-icon-button fxFlexAlign="center" style="background: transparent;" (click)="onClick(item)">
+              <mat-icon style="color:white;">{{item.icon}}</mat-icon>
             </button>
-            <span fxFlexAlign="center" style="font-size: x-small; color: darkgray; align-self: center;">{{group.name}}</span>
+            <span fxFlexAlign="center" style="font-size: x-small; color: darkgray; align-self: center;">{{item.name}}</span>
           </div>
         </div>
         <span fxFlexAlign="center" style="font-size: small; color: darkgray; margin-top: 10px;"> {{group.groupName}}</span>
