@@ -3,7 +3,6 @@
     <app-menu></app-menu>
   </mat-drawer>
   <mat-drawer-content>
-    <app-ribbon></app-ribbon>
     <mat-tab-group style="width: 95%;" [selectedIndex]="selectedTabIndex" (selectedIndexChange)="onTabChanged($event)">
       <mat-tab *ngFor="let link of navLinks" routerLink="{{link.link}}">
         <ng-template mat-tab-label>
@@ -12,9 +11,8 @@
           </a>
           <mat-icon (click)="onDeleteTab(link)">close</mat-icon>
         </ng-template>
-        <div>
-          <app-tab-content [tab]="link"></app-tab-content>
-        </div>
+        <app-tab [link]="link"></app-tab>
+
       </mat-tab>
     </mat-tab-group>
 

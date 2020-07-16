@@ -19,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { RibbonComponent } from './ribbon/ribbon.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { TabComponent } from './tab/tab.component';
 
 
 
@@ -32,6 +33,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MenuComponent,
     TabContentComponent,
     RibbonComponent,
+    TabComponent,
   ],
   imports: [
     BrowserModule,

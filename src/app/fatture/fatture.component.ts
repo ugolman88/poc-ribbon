@@ -11,10 +11,5 @@ export class FattureComponent implements OnInit {
   constructor(private ribbonService: RibbonService) {}
 
   ngOnInit(): void {
-    this.ribbonService.clickEvent$.subscribe((data: any) => {
-      if (data.context === 'Fatture') {
-        console.log('action: ' + data.action);
-      }
-    });
   }
 }

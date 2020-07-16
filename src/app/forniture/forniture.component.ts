@@ -10,10 +10,5 @@ export class FornitureComponent implements OnInit {
   constructor(private ribbonService: RibbonService) {}
 
   ngOnInit(): void {
-    this.ribbonService.clickEvent$.subscribe((data: any) => {
-       if (data.context === 'Forniture') {
-         console.log('action: ' + data.action);
-       }
-    });
   }
 }

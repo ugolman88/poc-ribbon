@@ -12,10 +12,6 @@ export class HomeComponent implements OnInit {
   constructor(private ribbonService: RibbonService) {}
 
   ngOnInit(): void {
-    this.ribbonService.clickEvent$.subscribe((data: any) => {
-      if (data.context === 'Home') {
-        console.log('action: ' + data.action);
-      }
-    });
+
   }
 }
