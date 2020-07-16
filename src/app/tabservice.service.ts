@@ -23,7 +23,7 @@ export class TabService {
   }
 
   changeTab(tabItem: TabItem): void {
-     this.tabsChange.next(tabItem);
+    this.tabsChange.next(tabItem);
   }
 
   getTabs(): TabItem[] {

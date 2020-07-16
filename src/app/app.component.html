@@ -12,10 +12,8 @@
           <mat-icon (click)="onDeleteTab(link)">close</mat-icon>
         </ng-template>
         <app-tab [link]="link"></app-tab>
-
       </mat-tab>
     </mat-tab-group>
-
     <router-outlet *ngIf="intab===false"></router-outlet>
   </mat-drawer-content>
 </mat-drawer-container>

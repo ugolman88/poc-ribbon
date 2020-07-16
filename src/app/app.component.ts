@@ -23,6 +23,7 @@ export class AppComponent implements OnInit {
     this.navLinks = this.tabservice.getTabs();
     this.tabservice.tabsChange$.subscribe((d) => {
       this.navLinks = this.tabservice.getTabs();
+   //   this.selectedTabIndex = d.index;
     });
     this.selectedTabIndex = 0;
   }
